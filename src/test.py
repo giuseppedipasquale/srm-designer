@@ -1,6 +1,15 @@
 from chamber import Chamber
 from motor import Motor
-c1 = Chamber(10, 20, 4)
-m = Motor(c1)
-print(m.chamber.d)
+from nozzle import Nozzle
+from propellant import Propellant
+
+cha = Chamber(75, 250, 6)
+noz = Nozzle(15, 1.5)
+knsu = Propellant(198, 1.13)
+gra = Grain(69,20,120,2,knsu)
+
+m = Motor(cha, noz, gra)
+print(m.chamber.lgt)
+print(m.nozzle.dt)
+print(m.grain.lgt)
 # todo test all changes
