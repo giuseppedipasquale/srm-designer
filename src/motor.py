@@ -8,3 +8,9 @@ class Motor:
         :param chamber: chamber object
         """
         self._chamber = chamber
+    @property
+    def chamber(self):
+        """
+        :return: chamber object
+        """
+        return self._chamber
