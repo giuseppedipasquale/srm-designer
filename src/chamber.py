@@ -2,6 +2,7 @@ from numpy import pi
 
 
 class Chamber:
+    # todo change d to D, lgt to L, meop to MEOP, v to V using refactor
     """
     Class to represent a solid rocket motor chamber.
     """
