@@ -1,33 +1,46 @@
 from numpy import pi
 
+
 class Chamber:
     """
     Class to represent a solid rocket motor chamber.
     """
 
-    def __init__(self, D, L, MEOP):
+    def __init__(self, d, lgt, meop):
         """
         Constructor
-        :param D: Diameter of chamber [mm]
-        :param L: Length of chamber [mm]
-        :param MEOP: Maximum expected operating pressure [MPa]
+        :param d: Diameter of chamber [mm]
+        :param lgt: Length of chamber [mm]
+        :param meop: Maximum expected operating pressure [MPa]
         """
-        self._D = D
-        self._L = L
-        self._MEOP = MEOP
+        self._d = d
+        self._lgt = lgt
+        self._meop = meop
 
     @property
-    def D(self):
-        return self._D
+    def d(self):
+        """
+        :return: Chamber diameter d
+        """
+        return self._d
 
     @property
-    def L(self):
-        return self._L
+    def lgt(self):
+        """
+        :return: Chamber length lgt
+        """
+        return self._lgt
 
     @property
-    def MEOP(self):
-        return self._MEOP
+    def meop(self):
+        """
+        :return: Maximum Expected Operating Pressure meop
+        """
+        return self._meop
 
     @property
-    def V(self):
-        return pi / 4 * self.L * self.D ** 2
+    def v(self):
+        """
+        :return: Chamber volume v
+        """
+        return pi / 4 * self.lgt * self.d ** 2
