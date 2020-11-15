@@ -74,7 +74,7 @@ class Propellant:
 
 class KNSU(Propellant):
     """
-    Class to represent a KNSU.
+    Class to represent a KNSU propellant.
     """
 
     def __init__(self):

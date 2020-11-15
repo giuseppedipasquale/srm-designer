@@ -6,33 +6,33 @@ class Nozzle:
     Class to represent a nozzle.
     """
 
-    def __init__(self, dt, cf):
+    def __init__(self, d_t, C_f):
         """
         Constructor
-        :param dt: Throat diameter dt [mm]
-        :param cf: Thrust coefficient cf
+        :param d_t: Throat diameter dt [mm]
+        :param C_f: Thrust coefficient Cf
         """
-        self._dt = dt
-        self._cf = cf
+        self._d_t = d_t
+        self._C_f = C_f
 
     @property
-    def dt(self):
+    def d_t(self):
         """
         :return: throat diameter
         """
-        return self._dt
+        return self._d_t
 
     @property
-    def cf(self):
+    def C_f(self):
         """
         :return: thrust coefficient
         """
-        return self._cf
+        return self._C_f
 
     @property
     def a_t(self):
         """
         :return: throat area
         """
-        return pi/4*self.dt**2
+        return pi/4*self.d_t**2
 

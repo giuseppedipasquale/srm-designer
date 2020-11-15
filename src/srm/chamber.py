@@ -2,46 +2,45 @@ from numpy import pi
 
 
 class Chamber:
-    # todo change d to D, lgt to L, meop to MEOP, v to V using refactor
     """
     Class to represent a solid rocket motor chamber.
     """
 
-    def __init__(self, d, lgt, meop):
+    def __init__(self, D, L, MEOP):
         """
         Constructor
-        :param d: Diameter of chamber [mm]
-        :param lgt: Length of chamber [mm]
-        :param meop: Maximum expected operating pressure [MPa]
+        :param D: Diameter of chamber [mm]
+        :param L: Length of chamber [mm]
+        :param MEOP: Maximum expected operating pressure [MPa]
         """
-        self._d = d
-        self._lgt = lgt
-        self._meop = meop
+        self._D = D
+        self._L = L
+        self._MEOP = MEOP
 
     @property
-    def d(self):
+    def D(self):
         """
-        :return: Chamber diameter d
+        :return: Chamber diameter D
         """
-        return self._d
+        return self._D
 
     @property
-    def lgt(self):
+    def L(self):
         """
-        :return: Chamber length lgt
+        :return: Chamber length L
         """
-        return self._lgt
+        return self._L
 
     @property
-    def meop(self):
+    def MEOP(self):
         """
-        :return: Maximum Expected Operating Pressure meop
+        :return: Maximum Expected Operating Pressure MEOP
         """
-        return self._meop
+        return self._MEOP
 
     @property
-    def v(self):
+    def V(self):
         """
-        :return: Chamber volume v
+        :return: Chamber volume V
         """
-        return pi / 4 * self.lgt * self.d ** 2
+        return pi / 4 * self.L * self.D ** 2
