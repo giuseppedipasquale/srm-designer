@@ -53,6 +53,6 @@ class Motor:
         A_b = A_int+A_ext+A_lat
         KN_max = self.grain.propellant.KN_coef[0] + self.grain.propellant.KN_coef[1]*self.chamber.MEOP + self.grain.propellant.KN_coef[2]*self.chamber.MEOP**2
         A_t = max(A_b)/KN_max
-        self.nozzle._d_t = (4*A_t/pi)
+        self.nozzle._d_t = (4*A_t/pi)**0.5
 
 # todo implement method to compute pressure/thrust over time and other performance properties
