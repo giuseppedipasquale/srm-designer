@@ -16,4 +16,5 @@ print(m.nozzle.d_t)
 m.MEOP2d_t()
 print(m.grain.propellant.R)
 print(m.nozzle.d_t)
+m.compute_p()
 # todo test all changes
