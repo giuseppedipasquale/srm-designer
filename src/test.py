@@ -7,7 +7,7 @@ from src.srm.propellant import Propellant
 cha = Chamber(75, 250, 6)
 noz = Nozzle(15, 1.5)
 knsu = Propellant(198, 1.13)
-gra = Grain(69, 20, 120, 2, knsu)
+gra = Grain(knsu, 69, 20, 120, 2, 1, 0, 0)
 
 m = Motor(cha, noz, gra)
 print(m.chamber.lgt)
