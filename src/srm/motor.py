@@ -103,7 +103,7 @@ class Motor:
             else:
                 mass_sto[i] = mass_sto[i - 1] + m_sto[i] * (t[i] - t[i - 1])
             rho_prod[i] = mass_sto[i] / V_free[i]
-            p[i] = (rho_prod[i] * R * T0 + 1e6 * 0.101) / 1e6
+            p[i] = (rho_prod[i] * R * T0 + 1e6 * 0.101) / 1e6 # To be commented
 
         plt.plot(t, p)
         plt.show()
