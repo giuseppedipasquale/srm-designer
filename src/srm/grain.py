@@ -79,3 +79,10 @@ class Grain:
         :return: Lateral inhibit
         """
         return self._lat_inhibit
+
+    @property
+    def lgt_tot(self):
+        """
+        :return: Total grains length
+        """
+        return self._n*self._lgt
